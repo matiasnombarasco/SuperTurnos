@@ -46,27 +46,6 @@ module.exports = function(app, passport) {
             failureRedirect: '#!/login'
         }), users.authCallback);
 
-    // Setting the github oauth routes
-    app.route('/auth/github')
-        .get(passport.authenticate('github', {
-            failureRedirect: '#!/login'
-        }), users.signin);
-
-    app.route('/auth/github/callback')
-        .get(passport.authenticate('github', {
-            failureRedirect: '#!/login'
-        }), users.authCallback);
-
-    // Setting the twitter oauth routes
-    app.route('/auth/twitter')
-        .get(passport.authenticate('twitter', {
-            failureRedirect: '#!/login'
-        }), users.signin);
-
-    app.route('/auth/twitter/callback')
-        .get(passport.authenticate('twitter', {
-            failureRedirect: '#!/login'
-        }), users.authCallback);
 
     // Setting the google oauth routes
     app.route('/auth/google')
