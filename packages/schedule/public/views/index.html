@@ -1,0 +1,24 @@
+<div class="" data-ng-controller="ScheduleController">
+    <h1>Configurar la agenda</h1>
+    <p>Desde aqui podes establecer como se va a completar la agenda</p>
+    <form>
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input class="form-control"  name="name" id="name" placeholder="Mi agenda nueva" >
+        </div>
+        <div class="form-group">
+            <label for="name">Dias de trabajo</label>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">Lunes</button>
+                <button type="button" class="btn btn-default">Martes</button>
+                <button type="button" class="btn btn-default">Miercoles</button>
+                <button type="button" class="btn btn-default">Jueves</button>
+                <button type="button" class="btn btn-default">Viernes</button>
+                <button type="button" class="btn btn-default">Sabado</button>
+                <button type="button" class="btn btn-default">Domingo</button>
+            </div>
+        </div>
+        <div id="work-day" class="panel"></div>
+        <input type="submit" class="btn btn-primary" name="save" value="Guardar">
+    </form>
+</div>
