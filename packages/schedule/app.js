@@ -19,7 +19,7 @@ Schedule.register(function(app, auth, database) {
     //We are adding a link to the main menu for all authenticated users
     Schedule.menus.add({
         title: 'Configurar Agenda',
-        link: 'schedule example page',
+        link: 'schedule list',
         roles: ['authenticated'],
         menu: 'main'
     });

@@ -1,10 +1,16 @@
-<div class="" data-ng-controller="ScheduleController">
+<div data-ng-controller="ScheduleController">
+    <h2>Mis Agendas</h2>
+    <ul >
+        <li ng-repeat="item in listAgenda"><a href="#">{{item.name}}</a></li>
+
+    </ul>
+    <!-- make this tabular -->
     <h1>Configurar la agenda</h1>
     <p>Desde aqui podes establecer como se va a completar la agenda</p>
-    <form>
+    <form data-ng-submit="create()" role="form" class="col-md-6">
         <div class="form-group">
             <label for="name">Nombre</label>
-            <input class="form-control"  name="name" id="name" placeholder="Mi agenda nueva" >
+            <input class="form-control" data-ng-model="name" name="name" id="name" placeholder="Mi agenda nueva" >
         </div>
         <div class="form-group">
             <label for="name">Dias de trabajo</label>
@@ -21,4 +27,5 @@
         <div id="work-day" class="panel"></div>
         <input type="submit" class="btn btn-primary" name="save" value="Guardar">
     </form>
+
 </div>

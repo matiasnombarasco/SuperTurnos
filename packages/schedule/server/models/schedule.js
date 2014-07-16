@@ -14,8 +14,12 @@ var ScheduleSchema = new Schema({
         type: String,
         required: true
     },
+    owner: {
+        type: String,
+        required: true
+    },
     timeoff: {},
-    days: {},
+    days: {}
 });
 
 mongoose.model('Schedule', ScheduleSchema);
